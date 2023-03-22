@@ -13,6 +13,7 @@ const origins = { origin: 'https://pokerun.onrender.com' }
 app.use(express.json())
 app.use(cors(origins))
 app.use(morgan('dev'))
+//* Sanity check
 
 //* MAIN ROUTER
 
