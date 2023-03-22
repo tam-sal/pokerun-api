@@ -11,10 +11,9 @@ const { DB_USER, DB_PASS, DB_NAME, DB_PORT, DB_HOST } = process.env
 const database = new Sequelize(
   `postgres://pokemon_5mgu_user:ZV3VXz8qCnG4nywHAdZy2gDigFsKCh1z@dpg-cgde40t269v52g76hc8g-a/pokemon_5mgu`,
   {
-    logging: console.log, native: false, dialect: 'postgres',
-    dialectOptions: {
-      ssl: true
-    }
+    logging: console.log,
+    native: false,
+    dialect: 'postgres'
   }
 )
 database
