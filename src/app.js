@@ -11,7 +11,7 @@ const origins = { origin: 'https://pokerun-api.onrender.com' }
 
 //* MIDDLEWARES
 app.use(express.json())
-app.use(cors())
+app.use(cors(origins))
 app.use(morgan('dev'))
 
 //* MAIN ROUTER
