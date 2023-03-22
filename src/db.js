@@ -9,7 +9,7 @@ const { DB_USER, DB_PASS, DB_NAME, DB_PORT, DB_HOST } = process.env
 
 //* CREATE A SEQUELIZE INSTANCE
 const database = new Sequelize(
-  `postgres://pokemon_5mgu_user:ZV3VXz8qCnG4nywHAdZy2gDigFsKCh1z@dpg-cgde40t269v52g76hc8g-a:5432/pokemon_5mgu`,
+  `postgres://${DB_USER}:${DB_PASS}@${DB_HOST}:${DB_PORT}/${DB_NAME}`,
   {
     logging: console.log,
     native: false,
