@@ -7,7 +7,7 @@ const mainRouter = require('./routes/mainRouter')
 //* INSTANTIATING APP
 const app = express()
 
-const origins = { origin: 'https://pokerun-api.onrender.com' }
+const origins = { origin: 'https://pokerun.onrender.com' }
 
 //* MIDDLEWARES
 app.use(express.json())
