@@ -11,7 +11,7 @@ const origins = { origin: 'https://pokerun.onrender.com' }
 
 //* MIDDLEWARES
 app.use(express.json())
-app.use(cors('*'))
+app.use(cors())
 app.use(morgan('dev'))
 //* Sanity check
 
