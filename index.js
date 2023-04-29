@@ -7,7 +7,7 @@ dotenv.config()
 
 const APP_PORT = process.env.APP_PORT || 3030
 
-app.listen(APP_PORT, async () => {
+app.listen(APP_PORT, '0.0.0.0', async () => {
   await database.sync()
     .then(() => console.log('server listening on port', APP_PORT))
     .catch(err => console.log(err.message))
