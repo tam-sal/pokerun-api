@@ -6,10 +6,11 @@ const { PokemonModel, TypeModel } = require('./models')
 //* ENV VARIABLES
 dotenv.config()
 const { RAILWAY } = process.env
+const { LOCAL_DB_USER, LOCAL_DB_PASS, LOCAL_DB_NAME, LOCAL_DB_PORT, LOCAL_DB_HOST } = process.env
 
 //* CREATE A SEQUELIZE INSTANCE
 const database = new Sequelize(
-  RAILWAY,
+  `${RAILWAY}`,
   {
     logging: console.log,
     native: false,
