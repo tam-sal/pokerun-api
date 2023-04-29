@@ -5,10 +5,10 @@ const dotenv = require('dotenv')
 
 dotenv.config()
 
-const PORT = process.ENV.APP_PORT || 3030
+const PORT = process.env.APP_PORT || 3030
 
 app.listen(PORT, '0.0.0.0', async () => {
   await database.sync()
-    .then(() => console.log('server listening on port', APP_PORT))
+    .then(() => console.log('server listening on port', PORT))
     .catch(err => console.log(err.message))
 })

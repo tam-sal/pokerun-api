@@ -6,7 +6,7 @@ const { PokemonModel, TypeModel } = require('./models')
 //* ENV VARIABLES
 dotenv.config()
 
-const { DB_USER, DB_PASS, DB_NAME, DB_PORT, DB_HOST } = process.ENV
+const { DB_USER, DB_PASS, DB_NAME, DB_PORT, DB_HOST } = process.env
 
 //* CREATE A SEQUELIZE INSTANCE
 const database = new Sequelize(
