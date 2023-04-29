@@ -10,7 +10,8 @@ const { LOCAL_DB_USER, LOCAL_DB_PASS, LOCAL_DB_NAME, LOCAL_DB_PORT, LOCAL_DB_HOS
 
 //* CREATE A SEQUELIZE INSTANCE
 const database = new Sequelize(
-  `${RAILWAY}`,
+  //`${RAILWAY}`
+  `postgres://${DB_USER}:${DB_PASS}@${DB_HOST}:${DB_PORT}/${DB_NAME}`,
   {
     logging: console.log,
     native: false
