@@ -13,8 +13,7 @@ const database = new Sequelize(
   `${RAILWAY}`,
   {
     logging: console.log,
-    native: false,
-    dialect: 'postgres'
+    native: false
   }
 )
 
