@@ -5,7 +5,7 @@ const dotenv = require('dotenv')
 
 dotenv.config()
 
-const PORT = process.env.APP_PORT || 3030
+const PORT = process.env.PORT || 3030
 
 app.listen(PORT, '0.0.0.0', async () => {
   await database.sync()
